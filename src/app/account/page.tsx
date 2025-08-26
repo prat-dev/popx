@@ -26,7 +26,7 @@ export default function AccountPage() {
         </div>
         <div className="mt-6">
             <p className="text-muted-foreground">
-                Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam
+                Welcome to your account page. Here you can manage your personal information, update your profile picture, and view your account details. Feel free to explore the settings and customize your experience.
             </p>
         </div>
         <Separator className="my-6" />
