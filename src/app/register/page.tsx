@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import Link from 'next/link';
 
 export default function RegisterPage() {
   const RequiredLabel = ({ htmlFor, children }: { htmlFor: string, children: React.ReactNode }) => (
@@ -56,7 +57,9 @@ export default function RegisterPage() {
       </div>
       <div className="flex-grow"></div>
       <div className="w-full max-w-sm">
-        <Button className="w-full">Create Account</Button>
+        <Button asChild className="w-full">
+            <Link href="/account">Create Account</Link>
+        </Button>
       </div>
     </div>
   );

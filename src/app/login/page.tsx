@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import Link from 'next/link';
 
 export default function LoginPage() {
   return (
@@ -25,7 +26,9 @@ export default function LoginPage() {
       </div>
        <div className="flex-grow"></div>
       <div className="w-full max-w-sm space-y-2">
-        <Button variant="secondary" className="w-full bg-muted text-muted-foreground">Login</Button>
+        <Button asChild variant="secondary" className="w-full bg-muted text-muted-foreground">
+          <Link href="/account">Login</Link>
+        </Button>
       </div>
     </div>
   );
