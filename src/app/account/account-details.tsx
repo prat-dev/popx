@@ -16,9 +16,9 @@ export default function AccountDetails() {
   useEffect(() => {
     const userId = searchParams.get('userId');
     if (userId) {
-      const user = getMockUser(userId);
-      if (user) {
-        setUser(user);
+      const foundUser = getMockUser(userId);
+      if (foundUser) {
+        setUser(foundUser);
       } else {
         setError('User not found.');
       }
