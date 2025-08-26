@@ -13,7 +13,7 @@ import {useToast} from '@/hooks/use-toast';
 export default function RegisterPage() {
   const router = useRouter();
   const {toast} = useToast();
-  const [name, setName] = useState('Marry Doe');
+  const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -59,7 +59,7 @@ export default function RegisterPage() {
           <RequiredLabel htmlFor="name">Full Name</RequiredLabel>
           <Input
             id="name"
-            placeholder="Marry Doe"
+            placeholder="Enter your full name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
