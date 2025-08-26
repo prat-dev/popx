@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Design Decoder',
-  description: 'AI-powered assistant for UI/UX development and design feedback.',
+  title: 'PopX',
+  description: 'Welcome to PopX',
 };
 
 export default function RootLayout({

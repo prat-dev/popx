@@ -1,22 +1,27 @@
-import { FeatureTabs } from '@/components/feature-tabs';
-import { Bot } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-4 sm:p-8 md:p-12 bg-background font-body">
-      <div className="w-full max-w-5xl mx-auto">
-        <header className="text-center mb-10">
-          <div className="inline-block bg-primary text-primary-foreground p-3 rounded-full mb-4 shadow-lg">
-            <Bot size={40} />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-headline font-bold text-foreground tracking-tight">
-            Design Decoder
+    <main className="flex h-screen flex-col bg-background font-body">
+      <div className="flex-grow"></div>
+      <div className="flex flex-col items-center justify-center p-8">
+        <div className="w-full max-w-sm text-left">
+          <h1 className="text-3xl font-bold text-foreground">
+            Welcome to PopX
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Your AI-powered assistant for UI/UX development and design feedback.
+          <p className="mt-2 text-muted-foreground">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           </p>
-        </header>
-        <FeatureTabs />
+        </div>
+        <div className="w-full max-w-sm mt-8 space-y-2">
+          <Button asChild className="w-full">
+            <Link href="/register">Create Account</Link>
+          </Button>
+          <Button asChild variant="secondary" className="w-full">
+            <Link href="/login">Already Registered? Login</Link>
+          </Button>
+        </div>
       </div>
     </main>
   );
